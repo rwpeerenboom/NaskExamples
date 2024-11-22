@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_response_validator">
+    <sys_generative_ai_response_validator action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <definition>25dbda5947c2da501d7d4f5c416d4392</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <order>100</order>
+        <sys_class_name>sys_generative_ai_response_validator</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:17:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>61dbda5947c2da501d7d4f5c416d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="UXC Generative AI" source="sn_uxc_gen_ai">1923d9ddd1d22110f877c76675ff5b9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_generative_ai_response_validator_61dbda5947c2da501d7d4f5c416d43a3</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:40</sys_updated_on>
+        <validator display_value="OpenAI Full History Postprocessor">e9dbda5947c2da501d7d4f5c416d43a0</validator>
+    </sys_generative_ai_response_validator>
+</record_update>

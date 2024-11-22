@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations/>
+        <ai_suggested>false</ai_suggested>
+        <definition>addbda5947c2da501d7d4f5c416d43fc</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>750</max_tokens>
+        <min_word_count>50</min_word_count>
+        <model>llm_generic</model>
+        <name/>
+        <parent/>
+        <prompt>&lt;s&gt; [INST] You are a legal attorney. You are optionally given SHORT_DESCRIPTION, DESCRIPTION, PRIORITY, STATE and ACTIVITIES.&#13;
+&#13;
+{{short_description}}&#13;
+{{description}}&#13;
+{{priority}}&#13;
+{{state}}&#13;
+{{other_fields.all_remaining_attributes}}&#13;
+{{relatedlists_data.all_remaining_attributes}}&#13;
+An array of activities from activity stream with created date, its type such as a comment or work note and the text: {{activities}}&#13;
+&#13;
+&#13;
+Based on the given input only, summarize the provided information and extract that into following sections:&#13;
+{{sections}}&#13;
+Only use the provided information and generate content only for the sections listed above. Do not reproduce details as is in the summary output, make sure to respond with a concise summary. Do not generate any information which is not provided. If you are not absolutely sure, return N/A for that section. DO NOT GENERATE ANY EXPLANATION, REASONING, COMMENTARY OR DESCRIPTION ABOUT THE SUMMARY.&#13;
+Always generate the output in below JSON format.&#13;
+&#13;
+{&lt;section_name&gt; : &lt;section_value&gt;} [/INST]</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>15384</request_tokens>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>draft</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:17:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f1db1e5947c2da501d7d4f5c416d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>addbda5947c2da501d7d4f5c416d43fc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Now Assist for Legal Service Delivery" source="sn_lg_gen_ai">cbba25086767461034b7a2aeb8f92234</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_generative_ai_config_f1db1e5947c2da501d7d4f5c416d432e</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:41</sys_updated_on>
+        <temperature>0</temperature>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

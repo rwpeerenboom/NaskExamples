@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[ExampleEmail]]></description>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <is_template>false</is_template>
+        <name>ExampleEmail</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="Other">a5efaf1c93764210aa5730f16489186d</skill_family>
+        <skill_id>a0bbd25947c2da501d7d4f5c416d4311</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>0</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:17:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>74bb565947c2da501d7d4f5c416d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ExampleEmail</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RobNaskSkill001" source="x_snc_robnaskskill">b227129d4782da501d7d4f5c416d43e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_74bb565947c2da501d7d4f5c416d433c</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:04</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=74bb565947c2da501d7d4f5c416d433c"/>
+</record_update>

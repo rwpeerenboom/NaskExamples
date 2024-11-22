@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_feature_mapping">
+    <sys_gen_ai_feature_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <customer_updatable>false</customer_updatable>
+        <document>a0bbd25947c2da501d7d4f5c416d4311</document>
+        <document_table>sys_one_extend_capability</document_table>
+        <feature_name>ExampleEmail</feature_name>
+        <licensable>true</licensable>
+        <skip_on_group_call>false</skip_on_group_call>
+        <sys_class_name>sys_gen_ai_feature_mapping</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:17:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ecbbd25947c2da501d7d4f5c416d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ExampleEmail</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UXC Generative AI" source="sn_uxc_gen_ai">1923d9ddd1d22110f877c76675ff5b9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_gen_ai_feature_mapping_ecbbd25947c2da501d7d4f5c416d4314</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:03</sys_updated_on>
+    </sys_gen_ai_feature_mapping>
+</record_update>

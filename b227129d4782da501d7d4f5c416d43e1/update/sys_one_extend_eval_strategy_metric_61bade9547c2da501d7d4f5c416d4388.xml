@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_eval_strategy_metric">
+    <sys_one_extend_eval_strategy_metric action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <definition display_value="Correctness Metric">cbf929b27fe242100a03b6257d866548</definition>
+        <eval_strategy display_value="Default">a1bade9547c2da501d7d4f5c416d4380</eval_strategy>
+        <gen_ai_config display_value="OneExtend Capability Definition: Correctness Metric">c834087d7f5202100a03b6257d866503</gen_ai_config>
+        <metric_name>Correctness Metric</metric_name>
+        <sys_class_name>sys_one_extend_eval_strategy_metric</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:12:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>61bade9547c2da501d7d4f5c416d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Correctness Metric</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RobNaskSkill001" source="x_snc_robnaskskill">b227129d4782da501d7d4f5c416d43e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_one_extend_eval_strategy_metric_61bade9547c2da501d7d4f5c416d4388</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:12:45</sys_updated_on>
+    </sys_one_extend_eval_strategy_metric>
+</record_update>

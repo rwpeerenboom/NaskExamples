@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_eval_strategy">
+    <sys_one_extend_eval_strategy action="INSERT_OR_UPDATE">
+        <capability display_value="ServiceDeskModel">41bada9547c2da501d7d4f5c416d43e9</capability>
+        <default>true</default>
+        <name>Default</name>
+        <skill_config_id>ddbade9547c2da501d7d4f5c416d4377</skill_config_id>
+        <sys_class_name>sys_one_extend_eval_strategy</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:12:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a1bade9547c2da501d7d4f5c416d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RobNaskSkill001" source="x_snc_robnaskskill">b227129d4782da501d7d4f5c416d43e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_one_extend_eval_strategy_a1bade9547c2da501d7d4f5c416d4380</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:12:45</sys_updated_on>
+    </sys_one_extend_eval_strategy>
+</record_update>

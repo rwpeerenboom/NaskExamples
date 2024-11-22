@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability_definition">
+    <sys_one_extend_capability_definition action="INSERT_OR_UPDATE">
+        <advanced>true</advanced>
+        <api>936e514a53b3b110f028ddeeff7b128c</api>
+        <api_type>sys_hub_flow</api_type>
+        <capability display_value="ExampleEmail">a0bbd25947c2da501d7d4f5c416d4311</capability>
+        <category display_value="Other">04c489f3532121106b38ddeeff7b1215</category>
+        <connection display_value="sn_generative_ai.Now_LLM">4e85d828777721105de60f207b5a9906</connection>
+        <description/>
+        <filter_properties>{"mixtral":"true"}</filter_properties>
+        <metadata/>
+        <name>ExampleEmail_Email Response - NOW LLM</name>
+        <order>0</order>
+        <postprocessor><![CDATA[(function(outputs) {     
+	/* write code here to transform definition output to capability output.*/       
+	outputs = JSON.parse(outputs);
+	outputs.result.response = JSON.parse(outputs.result.response)["model_output"].replace(/\n/g, '<br/>').replace(/(<br\/>){3,}/g, '<br/><br/>');
+	return outputs;	     
+})(outputs);
+]]></postprocessor>
+        <preprocessor><![CDATA[(function(inputs) {
+    /* write code here to transform capability input to definition input.*/
+    inputs = JSON.parse(inputs);
+    var emailUtils = new sn_uxc_gen_ai.UXCGenAIEmailReplyUtils();
+    var table = inputs.table;
+    var record = inputs.record_sys_id;
+    var email = inputs.email_sys_id;
+
+    if (table && record) {
+        inputs = emailUtils.getRecordDetails(table, record, inputs);
+        if (gs.nil(inputs.agent_name))
+            inputs.agent_name = gs.getUser().getName();
+        if (gs.nil(inputs.activity_stream)) {
+            inputs.activity_stream = emailUtils.getActivityStream(record, email);
+        }
+        if (gs.nil(inputs.related_knowledge_bases)) {
+            inputs.related_knowledge_bases = emailUtils.getRelatedKnowledgeBases(table, record);
+        }
+        if (gs.nil(inputs.related_resolution_notes) || gs.nil(inputs.related_journal_fields) || gs.nil(inputs.related_email_records)) {
+            var emailConfigProps = emailUtils.getEmailSkillConfigProps(email);
+            var relatedRecordsObj = emailUtils.getRelatedRecordsDetailsObj(table, record, emailConfigProps);
+            inputs.related_resolution_notes = relatedRecordsObj.relatedResolutionNotesInXML;
+            inputs.related_email_records = relatedRecordsObj.relatedEmailsInXML;
+            inputs.related_journal_fields = relatedRecordsObj.relatedJournalFieldsInXML;
+        }
+    }
+    gs.debug('UXCGenAIEmailReply : Inputs to Email Response capability are ' + JSON.stringify(inputs));
+    return inputs;
+})(inputs);]]></preprocessor>
+        <sys_class_name>sys_one_extend_capability_definition</sys_class_name>
+        <sys_created_by>robert.peerenboom@snc</sys_created_by>
+        <sys_created_on>2024-11-22 19:17:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74bb565947c2da501d7d4f5c416d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ExampleEmail_Email Response - NOW LLM</sys_name>
+        <sys_package display_value="UXC Generative AI" source="sn_uxc_gen_ai">1923d9ddd1d22110f877c76675ff5b9d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_one_extend_capability_definition_74bb565947c2da501d7d4f5c416d4318</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:04</sys_updated_on>
+        <truncate_strategy display_value="Email Quick Reply Truncation">cd486fdc3b76421089392a60c5e45a4b</truncate_strategy>
+    </sys_one_extend_capability_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=74bb565947c2da501d7d4f5c416d4318"/>
+</record_update>

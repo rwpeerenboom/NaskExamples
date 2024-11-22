@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_prompt_config">
+    <sys_generative_ai_prompt_config action="INSERT_OR_UPDATE">
+        <ai_config display_value="OneExtend Capability Definition: HealthExample_Summary (Now LLM Mixtral)">fddb1e5947c2da501d7d4f5c416d430d</ai_config>
+        <definition display_value="HealthExample_Summary (Now LLM Mixtral)">addbda5947c2da501d7d4f5c416d43fc</definition>
+        <filter_properties>{"change_request":"v1"}</filter_properties>
+        <filter_type/>
+        <is_default>false</is_default>
+        <order/>
+        <sys_class_name>sys_generative_ai_prompt_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 19:44:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5db1e5947c2da501d7d4f5c416d430f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>fddb1e5947c2da501d7d4f5c416d430d</sys_name>
+        <sys_package display_value="Now Assist for IT Service Management (ITSM)" source="sn_itsm_gen_ai">220c1cc4c3f36110fc97070e9140ddc7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RobNaskSkill001">b227129d4782da501d7d4f5c416d43e1</sys_scope>
+        <sys_update_name>sys_generative_ai_prompt_config_b5db1e5947c2da501d7d4f5c416d430f</sys_update_name>
+        <sys_updated_by>robert.peerenboom@snc</sys_updated_by>
+        <sys_updated_on>2024-11-22 19:17:41</sys_updated_on>
+    </sys_generative_ai_prompt_config>
+</record_update>
